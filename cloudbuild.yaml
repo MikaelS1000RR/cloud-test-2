@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/mikael-test-2/geshdo-events-dev/mikaels1000rr/cloud-test-2:$SHORT_SHA', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/mikael-test-2/geshdo-events-dev/mikaels1000rr/cloud-test-2:$SHORT_SHA']
+  
+  
